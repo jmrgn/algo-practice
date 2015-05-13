@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeakFinding", "src\PeakFind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Utilities", "src\Common.Utilities\Common.Utilities.csproj", "{D4E4D75A-4A61-40FC-9D84-19B2A2335A90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentDistance", "DocumentDistance\DocumentDistance.csproj", "{3F3D8D4F-CCF6-4078-ABB9-7638D867C087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "src\Sorting\Sorting.csproj", "{55216E34-95F8-4910-811C-1D08C9EDF6D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D4E4D75A-4A61-40FC-9D84-19B2A2335A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E4D75A-4A61-40FC-9D84-19B2A2335A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4E4D75A-4A61-40FC-9D84-19B2A2335A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3D8D4F-CCF6-4078-ABB9-7638D867C087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3D8D4F-CCF6-4078-ABB9-7638D867C087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3D8D4F-CCF6-4078-ABB9-7638D867C087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3D8D4F-CCF6-4078-ABB9-7638D867C087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55216E34-95F8-4910-811C-1D08C9EDF6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55216E34-95F8-4910-811C-1D08C9EDF6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55216E34-95F8-4910-811C-1D08C9EDF6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55216E34-95F8-4910-811C-1D08C9EDF6D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,14 +11,17 @@ namespace PeakFinding
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var fileName = args[0];
 
-            var countComparisons = 0;
             var timer = new Timer();
             var inputs = FileReader.ReadLines<int>(fileName);
+
+            var gen = ArrayGenerator.GenerateOneDimentionalArray(100000, 10000000, 999999);
+            FileWriter.WriteLines(gen, "./TestInput/Big_Array.txt");
         }
+
     }
 
     public class StraightForward : OneDimentionPeak

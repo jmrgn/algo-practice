@@ -8,8 +8,8 @@ namespace PeakFinding
 {
     public static class ArrayGenerator
     {
-        
-        private static int[] GenerateOneDimentionalArray(int minSize = 20, int maxSize = 50, int maxVal = 20000)
+
+        public static int[] GenerateOneDimentionalArray(int minSize = 20, int maxSize = 50, int maxVal = 20000)
         {
             var seed = DateTime.Today.Millisecond;
             var rand = new Random(seed);
