@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVL.cs" />
     <Compile Include="BinaryNode.cs" />
     <Compile Include="BinaryTree.cs" />
     <Compile Include="MaxHeap.cs" />

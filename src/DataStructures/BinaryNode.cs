@@ -122,6 +122,20 @@ namespace DataStructures
             return this;
         }
 
+        public void DeleteLeft()
+        {
+            Neighbors[0] = null;
+            Height = CalculateHeight();
+            SetSize();
+        }
+
+        public void DeleteRight()
+        {
+            Neighbors[1] = null;
+            Height = CalculateHeight();
+            SetSize();
+        }
+
         /// <summary>
         /// Inserts the given node in order, recalculating height in the process
         /// TODO: refactor this into the Binary Tree class

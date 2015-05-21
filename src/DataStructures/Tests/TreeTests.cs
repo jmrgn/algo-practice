@@ -13,6 +13,7 @@ namespace DataStructures.Tests
     {
         private BinaryTree<int> tree;
         private BinaryTree<int> orderedTree;
+        private AVL<int> avl;
         
         [SetUp]
         public void SetUp()
@@ -59,6 +60,18 @@ namespace DataStructures.Tests
             orderedTree.Root.Insert(new BinaryNode<int>(3));
             orderedTree.Root.Insert(new BinaryNode<int>(7));
             orderedTree.Root.Insert(new BinaryNode<int>(3));
+
+            avl = new AVL<int>();
+            avl.Root = new BinaryNode<int>(5);
+            avl.Root.Insert(new BinaryNode<int>(2));
+            avl.Root.Insert(new BinaryNode<int>(6));
+            avl.Root.Insert(new BinaryNode<int>(8));
+            avl.Root.Insert(new BinaryNode<int>(1));
+            avl.Root.Insert(new BinaryNode<int>(4));
+            avl.Root.Insert(new BinaryNode<int>(3));
+            avl.Root.Insert(new BinaryNode<int>(7));
+            avl.Root.Insert(new BinaryNode<int>(3));
+
         }
 
         [Test]
@@ -97,6 +110,17 @@ namespace DataStructures.Tests
 
 
 
+        
+        }
+
+        [Test]
+        public void AVLDeleteTest()
+        {
+            
+
+            avl.Delete(4, avl.Root, null);
+
+           
         }
     }
 }

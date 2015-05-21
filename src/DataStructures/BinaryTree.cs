@@ -98,6 +98,8 @@ namespace DataStructures
             return builder.ToString();
         }
 
+
+
         public void EnqueueChildren(Queue<BinaryNode<T>> queue, BinaryNode<T> current)
         {
             // enqueue currently visited children
