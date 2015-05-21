@@ -43,6 +43,13 @@
     <Compile Include="FileReader.cs" />
     <Compile Include="FileWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{7725b3ff-e821-4595-a910-228f4f9583ac}</Project>
+      <Name>DataStructures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

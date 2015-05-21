@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\HeapSort.cs" />
     <Compile Include="Algorithms\MergeSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +56,10 @@
     <ProjectReference Include="..\Common.Utilities\Common.Utilities.csproj">
       <Project>{d4e4d75a-4a61-40fc-9d84-19b2a2335a90}</Project>
       <Name>Common.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{7725B3FF-E821-4595-A910-228F4F9583AC}</Project>
+      <Name>DataStructures</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +78,7 @@
     <Content Include="TestInput\Small_Odd.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestInput\Test_Heap.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
