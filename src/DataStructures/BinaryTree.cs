@@ -33,6 +33,48 @@ namespace DataStructures
             
             return DepthFirstTraversal(Root);
         }
+
+
+        public void DepthFirstPrintRootToLeaf()
+        {
+            if (Root == null)
+            {
+                return;
+            }
+
+            DepthFirstPrintRootToLeaf(Root, new List<T>(), 0);
+        }
+
+        public void DepthFirstPrintRootToLeaf(BinaryNode<T> node, List<T> path, int level)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            if (path.Count > level)
+            {
+                path[level] = node.Value;
+            }
+            else
+            {
+                path.Add(node.Value);
+            }
+            level++;
+
+            if (node.Left == null && node.Right == null)
+            {
+                for(int i=0; i<level; i++)
+                {
+                    Debug.Write(path[i]);
+                }
+                Debug.WriteLine(String.Empty);
+            }
+
+            DepthFirstPrintRootToLeaf(node.Left, path, level);
+            DepthFirstPrintRootToLeaf(node.Right, path, level);
+
+        }
         
         
         private string DepthFirstTraversal(BinaryNode<T> node)
@@ -44,7 +86,7 @@ namespace DataStructures
                 return string.Empty;
             }
 
-            StringBuilder builder = new StringBuilder();
+            var builder = new StringBuilder();
             item = Convert.ToString(node.Value);
             builder.Append(item);
             builder.Append(',');

@@ -59,7 +59,7 @@ namespace DataStructures
             Size = count;
         }
 
-        protected NodeList<T> Neighbors
+        public NodeList<T> Neighbors
         {
             get
             {

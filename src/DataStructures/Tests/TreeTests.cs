@@ -114,6 +114,12 @@ namespace DataStructures.Tests
         }
 
         [Test]
+        public void PrintRootToLeafTest()
+        {
+            orderedTree.DepthFirstPrintRootToLeaf();
+        }
+
+        [Test]
         public void AVLDeleteTest()
         {
             

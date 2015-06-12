@@ -41,14 +41,27 @@ namespace Sorting
 
                 //Console.WriteLine("Insertion Sort success: {0} in time {1}", isSorted, timer.Elapsed);
 
-                var mergeInputs = inputs.ToArray();
-                timer.Reset();
-                timer.Start();
-                var mergeSort = new MergeSort(mergeInputs);
-                var mergeSorted = mergeSort.Sort();
+                //var mergeInputs = inputs.ToArray();
+                //timer.Reset();
+                //timer.Start();
+                //var mergeSort = new MergeSort(mergeInputs);
+                //var mergeSorted = mergeSort.Sort();
+                //timer.Stop();
+                //var isSorted = mergeSorted.IsSorted();
+
+
+               // Console.WriteLine("Merge Sort success: {0} in time {1}", isSorted, timer.Elapsed);
+
+                var radix = new RadixSort();
+                var radixInputs = inputs.ToArray();
+
+                timer.Start(); 
+                var sortedRadix = radix.Sort(radixInputs);
                 timer.Stop();
-                var isSorted = mergeSorted.IsSorted();
+                var isSorted = sortedRadix.IsSorted();
+
                 Console.WriteLine("Merge Sort success: {0} in time {1}", isSorted, timer.Elapsed);
+
             }
         }
     }
